@@ -1,7 +1,7 @@
-import React, {PureComponent} from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import AceEditor from 'react-ace'
-import {get} from 'lodash'
+import { get } from 'lodash'
 import styles from './PreviewCode.css'
 
 /* eslint-disable import/no-unassigned-import */
@@ -16,6 +16,7 @@ import 'brace/mode/php'
 import 'brace/mode/sass'
 import 'brace/mode/scss'
 import 'brace/mode/python'
+import 'brace/mode/java'
 import 'brace/mode/sh'
 import 'brace/mode/text'
 import 'brace/theme/github'
@@ -25,7 +26,7 @@ import 'brace/theme/tomorrow'
 import './groq'
 /* eslint-enable import/no-unassigned-import */
 
-import {SUPPORTED_LANGUAGES, LANGUAGE_ALIASES, ACE_EDITOR_PROPS, ACE_SET_OPTIONS} from './config'
+import { SUPPORTED_LANGUAGES, LANGUAGE_ALIASES, ACE_EDITOR_PROPS, ACE_SET_OPTIONS } from './config'
 import createHighlightMarkers from './createHighlightMarkers'
 
 function isSupportedLanguage(mode) {
@@ -65,7 +66,7 @@ export default class PreviewCode extends PureComponent {
   }
 
   render() {
-    const {value, type} = this.props
+    const { value, type } = this.props
     const fixedLanguage = get(type, 'options.language')
     const mode = isSupportedLanguage((value && value.language) || fixedLanguage) || 'text'
     return (
