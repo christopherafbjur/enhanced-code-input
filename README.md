@@ -2,6 +2,11 @@
 
 This is a fork of the [official @sanity/code-input](https://github.com/sanity-io/sanity/tree/next/packages/%40sanity/code-input) plugin which adds various capabilities.
 
+# Temp installation
+
+1. Clone and add folder to plugins/ folder of Sanity project
+2. Add `code-input-enhanced` to sanity.json in "plugins"
+
 Currently only a subset of languages and features are exposed, over time we will implement a richer set of options.
 
 ## Installation
