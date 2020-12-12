@@ -1,13 +1,13 @@
-# @sanity/code-input
+# sanity-plugin-code-input-enhanced
 
-Code input for [Sanity](https://sanity.io/).
+This is a fork of the [official @sanity/code-input](https://github.com/sanity-io/sanity/tree/next/packages/%40sanity/code-input) plugin which adds various capabilities.
 
 Currently only a subset of languages and features are exposed, over time we will implement a richer set of options.
 
 ## Installation
 
 ```
-sanity install @sanity/code-input
+sanity install code-input-enhanced
 ```
 
 ## Usage
@@ -20,11 +20,11 @@ Use it in your schema types:
   fields: [
     // [...]
     {
-      name: 'exampleUsage',
-      title: 'Example usage',
-      type: 'code'
-    }
-  ]
+      name: "exampleUsage",
+      title: "Example usage",
+      type: "code",
+    },
+  ];
 }
 ```
 
