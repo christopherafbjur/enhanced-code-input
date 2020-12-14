@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import React, {PureComponent} from 'react'
+import React, { PureComponent } from 'react'
 import MdCode from 'react-icons/lib/md/code'
 import JsonLogo from './jsonLogo'
 
@@ -18,7 +18,7 @@ class Input extends PureComponent {
   }
 
   render() {
-    const {CodeInput} = this
+    const { CodeInput } = this
     return <CodeInput ref={this.codeInput} {...this.props} />
   }
 }
@@ -81,6 +81,13 @@ export default {
       title: 'Code',
       name: 'code',
       type: 'text'
+    },
+    {
+      title: 'Copyable',
+      name: 'copyable',
+      type: 'boolean',
+      description:
+        'Toggle which can be used to define if a copy code button should be included from the code serializer or not.'
     },
     {
       name: 'language',
