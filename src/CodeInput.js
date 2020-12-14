@@ -40,6 +40,7 @@ import "brace/mode/scss";
 import "brace/mode/python";
 import "brace/mode/java";
 import "brace/mode/c_cpp";
+import "brace/mode/mysql";
 import "brace/mode/sh";
 import "brace/mode/text";
 import "./groq";

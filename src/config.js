@@ -12,6 +12,7 @@ export const SUPPORTED_LANGUAGES = [
   { title: "Python", value: "python" },
   { title: "Java", value: "java" },
   { title: "C++", value: "c_cpp" },
+  { title: "MySQL", value: "mysql" },
   { title: "sh", value: "sh" },
   { title: "Plain text", value: "text" },
   { title: "GROQ", value: "groq" },
